@@ -7,10 +7,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="germanstyledates" />
+        <module name="Regex_Java_german-style" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="germanstyledates" target="1.8" />
+      <module name="Regex_Java_german-style" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
