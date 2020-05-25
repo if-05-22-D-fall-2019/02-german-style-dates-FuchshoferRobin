@@ -4,7 +4,9 @@ import java.util.regex.Pattern;
 public class GermanStyleDateChecker {
     public static Matcher getMatcher(String dateString) {
 
-        final String regex = "\\d{1,2}(\\w|\\s)0?\\d{1,2}(\\w|\\s)\\d{1,4}";
+        final String regex = "(3(0|1)|[0-2]?\\d)(\\-|\\.|\\s)(0?[1-9]|1[0-2])(\\-|\\.|\\s)((19|20)?\\d{2})";
+
+
 
         final String checkerString = dateString;
 
@@ -12,7 +14,6 @@ public class GermanStyleDateChecker {
         Matcher matcher = pattern.matcher(checkerString);
 
         return matcher;
-
 
     }
 }
